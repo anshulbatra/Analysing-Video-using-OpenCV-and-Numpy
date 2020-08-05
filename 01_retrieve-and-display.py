@@ -19,7 +19,8 @@ def get_frames(filename):
         if ret:
             yield frame
         else:
-            yield None
+            yield None        #Could also use break here
+    video.release()
     yield None
     
     
